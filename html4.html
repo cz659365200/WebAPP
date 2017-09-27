@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>服务单</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.css">
+        <link rel="stylesheet" href="css/style.css">
+		<style>
+			.mui-card .mui-control-content {
+				padding: 10px;
+			}
+			.mui-control-content {
+				height: 500px;
+				overflow-y:auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+        	<div class="inner_title">
+                <p>服务单列表</p>
+            </div>
+			<div style="padding:10px  10px 0 10px;background-color: #ffffff;">
+				<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1">
+						全部服务单
+					</a>
+					<a class="mui-control-item" href="#item2">
+						待评价<span>（3）</span>
+					</a>
+					
+				</div>
+			</div>
+            
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<div id="scroll" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+                                    <div class="mui_lidiv1">
+                                        <img src="images/图层 2.png" class="mui_liimg">
+                                    </div>
+                                    <div class="mui_lidiv2">
+                                    	<span class="mui_lispan1">网络权限开通</span>
+                                    	<span class="mui_lispan2">请为我开通PC外网权限</span>
+                                    	<span class="mui_lispan3">12.26&nbsp;&nbsp;10:25</span>
+                                    </div>
+                                    
+                                    <div class="mui_lidiv3">
+                                        <a href="html6.html" class="mui_lia1">处理中</a>
+                                    </div>
+								</li>
+								<li class="mui-table-view-cell">
+                                    <div class="mui_lidiv1">
+                                        <img src="images/图层 2.png" class="mui_liimg">
+                                    </div>
+                                    <div class="mui_lidiv2">
+                                    	<span class="mui_lispan1">网络权限开通</span>
+                                    	<span class="mui_lispan2">请为我开通PC外网权限</span>
+                                    	<span class="mui_lispan3">12.26&nbsp;&nbsp;10:25</span>
+                                    </div>
+                                    
+                                    <div class="mui_lidiv3">
+                                        <a href="html3.html" class="mui_lia2">待评价</a>
+                                    </div>
+								</li>
+								<li class="mui-table-view-cell">
+                                    <div class="mui_lidiv1">
+                                        <img src="images/图层 2.png" class="mui_liimg">
+                                    </div>
+                                    <div class="mui_lidiv2">
+                                    	<span class="mui_lispan1">网络权限开通</span>
+                                    	<span class="mui_lispan2">请为我开通PC外网权限</span>
+                                    	<span class="mui_lispan3">12.26&nbsp;&nbsp;10:25</span>
+                                    </div>
+                                    
+                                    <div class="mui_lidiv3">
+                                        <a href="html7.html" class="mui_lia3">已评价</a>
+                                    </div>
+								</li>
+								
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+                            <div class="mui_lidiv1">
+                                <img src="images/图层 2.png" class="mui_liimg">
+                            </div>
+                            <div class="mui_lidiv2">
+                                <span class="mui_lispan1">网络权限开通</span>
+                                <span class="mui_lispan2">请为我开通PC外网权限</span>
+                                <span class="mui_lispan3">12.26&nbsp;&nbsp;10:25</span>
+                            </div>
+                            
+                            <div class="mui_lidiv3">
+                            	<p>完成待评价</p>
+                                <a href="html3.html" class="mui_lia2">评价</a>
+                            </div>
+                        </li>
+						<li class="mui-table-view-cell">
+                            <div class="mui_lidiv1">
+                                <img src="images/图层 2.png" class="mui_liimg">
+                            </div>
+                            <div class="mui_lidiv2">
+                                <span class="mui_lispan1">网络权限开通</span>
+                                <span class="mui_lispan2">请为我开通PC外网权限</span>
+                                <span class="mui_lispan3">12.26&nbsp;&nbsp;10:25</span>
+                            </div>
+                            
+                            <div class="mui_lidiv3">
+                            	<p>完成待评价</p>
+                                <a href="html3.html" class="mui_lia2">评价</a>
+                            </div>
+                        </li>
+						<li class="mui-table-view-cell">
+                            <div class="mui_lidiv1">
+                                <img src="images/图层 2.png" class="mui_liimg">
+                            </div>
+                            <div class="mui_lidiv2">
+                                <span class="mui_lispan1">网络权限开通</span>
+                                <span class="mui_lispan2">请为我开通PC外网权限</span>
+                                <span class="mui_lispan3">12.26&nbsp;&nbsp;10:25</span>
+                            </div>
+                            
+                            <div class="mui_lidiv3">
+                            	<p>完成待评价</p>
+                                <a href="html3.html" class="mui_lia2">评价</a>
+                            </div>
+                        </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--底部nav-->
+        <div class="mui_nav_padding"></div>
+		
+        <script src="js/mui.min.js"></script>
+        <script>
+			(function($) {
+				$('#scroll').scroll({
+					indicators: true //是否显示滚动条
+				});
+			})(mui);
+		</script>
+	</body>
+</html>

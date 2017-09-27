@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>知识阅读</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.css">
+		<link rel="stylesheet" href="css/new_style.css">
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" onclick="history.back()"></a>
+			<h1 class="mui-title">知识阅读</h1>
+		</header>
+		<div class="mui-content">
+			<p class="p2">Cisco命令调度策略</p>
+			<div class="block">
+				<p><span class="time">2016.12.23</span>&nbsp;&nbsp;<span class="author">余靖</span> &nbsp;<span class="quarry">中信信息</span></p>
+				<p>知识类别：<span class="sort">网络运维</span></p>
+			</div>
+			<div id="main">
+				<div class="">
+					<p>Command Scheduler (KRON)Policy for System Startup</p>
+					<p>Cisco 命令行调度策略</p>
+					<p>Cisco私有技术</p>
+				</div>
+				<div class="">
+					<p>特点：</p>
+					<p>1.给予时间自动执行命令</p>
+					<p>2.不支持交互式应用</p>
+					<p>3.常用于自动备份配置</p>
+				</div>
+				<div>
+					<p>组成：</p>
+					<p>策略：<span>Kron policy-list 用来定义动作</span></p>
+					<p>调度：<span>Kron occurrence 用来定义策略合适执行，并且需要关联策略</span></p>
+				</div>
+				<div>
+					<p>案例：</p>
+					<p>jdlvjndvnadvn;dvmKron occurrence 闪电风暴用来定义策略合适执行，并且需要关联策略 jdlvjndvnadvn;dvmKron occurrence 用来定义策dlvjndvnadvn;dvmKron occurrence 用来定义策略合适执行，并且需要关联策略 jdlvjndvnadvn;dvmKron occurrence 用来定义策略合适执行，并且需要关联策略 jdlvjndvnadvn;dvmKron occurrence 用来定义策略略合适执行，并且需要关联策略 jdlvjndvnadvn;dvmKron occurrence 用来定义策略合适执行，并且需要关联策略
+					</p>
+				</div>
+				<div class="like">
+					<a href="javascript:;" onclick="change()" id="A">
+						<span>(<b id="num">5</b>)</span>
+						<img src="img/like1.jpg" alt="no-img" id="IMG" />
+						<span class="zan">点赞</span>
+					</a>
+				</div>
+			</div>
+			<!--模块-->
+
+		</div>
+		
+
+		<!--底部nav-->
+		<div class="mui_nav_padding"></div>
+		<nav class="mui-bar mui-bar-tab mui_bg">
+			<a href="putong1.html" class="mui_bottom_a">
+				<span class="">
+					<img class="mui_bottom_img" src="img/首页1.png">
+					<div class="mui_bottom_c1">首页</div>
+				</span>
+			</a>
+			<a href="putong2.html" class="mui_bottom_a">
+				<span class="">
+					<img class="mui_bottom_img" src="img/任务2.png">
+					<div class="mui_bottom_c2">任务</div>
+                    <!--红色圈圈角标-->
+					<div class="mui_tips" style="">5</div>
+				</span>
+			</a>
+			<a href="tongji-putong.html" class="mui_bottom_a">
+				<span class="">
+					<img class="mui_bottom_img" src="img/知识库2.png">
+					<div class="mui_bottom_c2">知识库</div>
+				</span>
+			</a>
+		</nav>
+
+		<script>
+			window.onload = function() {
+				var a = document.getElementById("A")
+				var zan = document.getElementsByClassName("zan")[0];
+				var number = document.getElementById("num").innerText;
+				var flag = true;				
+				a.onclick = function change() {
+					if(flag) {
+						document.getElementById("IMG").src = "img/like2.jpg";
+						zan.style.color = "red";
+						number1 = ++number;
+						console.log(number1);
+						document.getElementById("num").innerText = number1;
+						flag=false;
+					}					
+				}
+			}
+		</script>
+	</body>
+
+</html>

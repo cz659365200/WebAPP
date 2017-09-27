@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.css">
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body style="background-color:#e5e5e5 !important; ">
+		<div class="frm_box">
+			<iframe name="iframe0" width="100%" height="100%" src="index.html" frameborder="0" data-id="index.html" id="frm1">
+	        </iframe>
+        </div>
+		<nav class="mui-bar mui-bar-tab mui_bg tab_menu">
+			<a class="mui_bottom_a" id="tab1">
+				<span class="">
+					<span class="mui_bottom_img active icon-icon1"></span>
+					<div class="mui_bottom_c1">首页</div>
+				</span>
+			</a>
+			<a  class="mui_bottom_a" id="tab2">
+				<span class="">
+					<span class="mui_bottom_img icon-icon2"></span>
+					<div class="mui_bottom_c2">服务单</div>
+                    <!--红色圈圈角标-->
+					<div class="mui_tips" style="">5</div>
+				</span>
+			</a>
+			<a  class="mui_bottom_a" id="tab3">
+				<span class="">
+					<span class="mui_bottom_img icon-icon3"></span>
+					<div class="mui_bottom_c2">统计</div>
+				</span>
+			</a>
+            <a  class="mui_bottom_a" id="tab4">
+                <span class="">
+                    <span class="mui_bottom_img icon-icon4"></span>
+                    <div class="mui_bottom_c2">知识库</div>
+                </span>
+            </a>
+		</nav>
+
+	<script src="js/jquery-1.11.0.js"></script>
+	<script>
+	// tab 切换部分
+		$(function(){
+			$(".tab_menu a").click(function(){
+				$(this).find("span.mui_bottom_img").addClass("active");
+				$(this).siblings().find("span.mui_bottom_img").removeClass("active");
+			});
+			$("#tab1").on('click', function() {
+				$("#tab1 div").removeClass("mui_bottom_c2").addClass("mui_bottom_c1");
+				$("#tab2 div:eq(0)").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+				$("#tab3 div").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+				$("#tab4 div").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+				$("#frm1").show();
+				$("#frm2").hide();
+				$("#frm3").hide();
+				$("#frm4").hide();
+			});
+			
+			
+			$("#tab2").on('click', function() {
+					$("#tab1 div").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+					$("#tab2 div:eq(0)").removeClass("mui_bottom_c2").addClass("mui_bottom_c1");
+					$("#tab3 div").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+					$("#tab4 div").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+			        $(".frm_box").append('<iframe name="iframe2" width="100%" height="100%" src="html4.html" frameborder="0" data-id="tongji-putong.html"  style="display: block;" id="frm2" >');
+					$("#frm1").hide();
+					$("#frm3").hide();
+					$("#frm4").hide();
+					$("iframe#frm2:eq(1)").remove();
+			   if(document.getElementById("frm2").style.display=='none'){
+			        $("#frm2").show();
+					$("#frm1").hide();
+					$("#frm3").hide();
+					$("#frm4").hide();
+					$("iframe#frm2:eq(1)").remove();
+			  }
+			});
+			
+			$("#tab3").on('click', function() {
+			        $(".frm_box").append('<iframe name="iframe3" width="100%" height="100%" src="tongji-putong.html" frameborder="0" data-id="tongji-putong.html"  style="display: block;" id="frm3" >');		
+			        $("#tab1 div").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+					$("#tab2 div:eq(0)").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+					$("#tab3 div").removeClass("mui_bottom_c2").addClass("mui_bottom_c1");
+					$("#tab4 div").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+					$("#frm1").hide();
+					$("#frm2").hide();
+					$("#frm4").hide();
+					$("iframe#frm3:eq(1)").remove();
+			   if(document.getElementById("frm3").style.display=='none'){
+			        $("#frm3").show();
+					$("#frm1").hide();
+					$("#frm2").hide();
+					$("#frm4").hide();
+					$("iframe#frm3:eq(1)").remove();
+			  }
+			});
+			
+			$("#tab4").on('click', function() {
+			        $(".frm_box").append('<iframe name="iframe4" width="100%" height="100%" src="new_index1.html" frameborder="0" data-id="tongji-putong.html"  style="display: block;" id="frm4" >');
+			        $("#tab1 div").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+					$("#tab2 div:eq(0)").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+					$("#tab3 div").removeClass("mui_bottom_c1").addClass("mui_bottom_c2");
+					$("#tab4 div").removeClass("mui_bottom_c2").addClass("mui_bottom_c1");
+					$("#frm1").hide();
+					$("#frm3").hide();
+					$("#frm2").hide();
+					$("iframe#frm4:eq(1)").remove();
+			   if(document.getElementById("frm4").style.display=='none'){
+			        $("#frm4").show();
+					$("#frm1").hide();
+					$("#frm3").hide();
+					$("#frm2").hide();
+					$("iframe#frm4:eq(1)").remove();
+			  }
+			});
+		});
+		
+		
+		
+//		
+	</script>
+	</body>
+</html>
